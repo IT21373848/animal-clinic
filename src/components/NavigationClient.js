@@ -20,7 +20,6 @@ class Navbar2 extends Component {
                     </Link>
                 </li>
 
-
                 <li className="nav-item2" >
                     <Link to="/store" className="nav-link">
                         <h6>Online Store</h6>
@@ -28,8 +27,8 @@ class Navbar2 extends Component {
                 </li>
 
                 <li className="nav-item2" >
-                    <Link to="/appointments" className="nav-link" > 
-                        <h6>Our Team</h6>
+                    <Link to="/CusAppointment" className="nav-link" > 
+                        <h6>Appointments</h6>
                     </Link>
                 </li>
 

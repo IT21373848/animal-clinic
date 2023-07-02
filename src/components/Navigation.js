@@ -17,16 +17,16 @@ class Navbar extends Component {
       <div className="nav1">
         <ul className="nav-tabs1">
           <li className="nav-item1">
-            <Link to="/login" className="nav-link">
-              <p>Login</p>
+            <Link to="/profile" className="nav-link">
+              <p>Profile</p>
             </Link>
           </li>
 
           <li className="nav-item1">
-            <Link to="/register" className="nav-link">
-              <p>Register</p>
+            <Link onClick={this.logOut.bind(this)} className="nav-link">
+              <p>LogOut</p>
             </Link>
-          </li>
+          </li> 
         </ul>
       </div>
     );

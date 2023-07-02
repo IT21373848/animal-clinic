@@ -14,7 +14,7 @@ class Profile extends Component {
   }
 
   componentDidMount() {
-    const token = localStorage.usertoken;
+/*     const token = localStorage.usertoken;
     console.log("token:", token);
     if (!token) {
       this.setState({ error: "Token not found in local storage" });
@@ -31,6 +31,7 @@ class Profile extends Component {
     } catch (error) {
       this.setState({ error: "Error decoding token: " + error.message });
     }
+   */
   }
 
   render() {
@@ -48,7 +49,7 @@ class Profile extends Component {
             <Row style={{ marginLeft: "200px" }}>
               <Col md={3}>
                 <img
-                  src="../img/user.png"
+                 src={process.env.PUBLIC_URL + "/img/user.png"}
                   className="circular-image"
                   style={{ marginTop: "10px" }}
                   alt="profile"
@@ -64,14 +65,18 @@ class Profile extends Component {
                         <td>Name</td>
                         <td>
                           <b>
-                            {first_name} {last_name}
+                          {/*   {first_name} {last_name} */}
+                          Admin
                           </b>
                         </td>
                       </tr>
                       <tr>
                         <td>Email</td>
                         <b>
-                          <td>{email}</td>
+                          <td>
+                          {/*   {email} */}
+                          admin@gmai.com
+                            </td>
                         </b>
                       </tr>
                     </h3>

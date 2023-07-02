@@ -4,11 +4,7 @@ import { withRouter } from "./withRouter";
 
 class Navbar3 extends Component {
   render() {
-    const loginRegLink = (
-      <div className="nav2">
-        <ul className="nav-tabs2"></ul>
-      </div>
-    );
+
 
     const userLink = (
       <ul className="nav-tabs sidebar">
@@ -132,7 +128,7 @@ class Navbar3 extends Component {
           className="navbar-collapse justify-content-md-center "
           id="navbar1"
         >
-          {localStorage.usertoken ? userLink : loginRegLink}
+            {userLink}
         </div>
       </nav>
     );
