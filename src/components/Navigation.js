@@ -66,7 +66,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbar1">
             <ul className="nav-tabs1"> 
               <Link to="/" className="nav-link">
-              <img src={process.env.PUBLIC_URL + "/img/applogo.png"} className="app-logo" alt="home" /> 
+              <img src={process.env.PUBLIC_URL + "/img/appLogo.png"} className="app-logo" alt="home" /> 
                </Link> 
             </ul>
  

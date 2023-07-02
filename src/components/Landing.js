@@ -70,14 +70,14 @@ class Landing extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={getImageUrl("/img/HomeSlide3.png")}
+              src={getImageUrl("/img/HomeSlide3.jpg")}
               alt="Second slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={getImageUrl("/img/HomeSlide2.png")}
+              src={getImageUrl("/img/HomeSlide2.jpg")}
               alt="Third slide"
             />
           </Carousel.Item> 
