@@ -68,7 +68,7 @@ class App extends Component {
           <Navbar />
           <Navbar2 />
           <div className="content-container">
-            <Routes>
+            <Routes basename="/animal-clinic"> 
               <Route path="/" element={<Landing />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
