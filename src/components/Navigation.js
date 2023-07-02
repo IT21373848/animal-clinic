@@ -66,7 +66,8 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbar1">
             <ul className="nav-tabs1"> 
               <Link to="/" className="nav-link">
-              <img src= "/img/applogo.png" className="app-logo" alt="home" />  </Link> 
+              <img src={process.env.PUBLIC_URL + "/img/applogo.png"} className="app-logo" alt="home" /> 
+               </Link> 
             </ul>
  
             {localStorage.usertoken ? userLink : loginRegLink}
