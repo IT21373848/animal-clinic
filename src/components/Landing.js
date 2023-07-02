@@ -59,21 +59,21 @@ class Landing extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="../img/HomeSlide1.png"
+              src="/img/HomeSlide1.png"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="../img/HomeSlide3.jpg"
+              src="/img/HomeSlide3.jpg"
               alt="Second slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="../img/HomeSlide2.jpg"
+              src="/img/HomeSlide2.jpg"
               alt="Third slide"
             />
           </Carousel.Item>
