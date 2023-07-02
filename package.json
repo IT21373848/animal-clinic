@@ -1,8 +1,8 @@
 {
   "homepage": "https://it21373848.github.io/Animal-Clinic-Management-System",
-  "name": "myapp",
+  "name": "Animal-Clinic-Management-System",
   "version": "0.1.0",
-  "private": true,
+  "private": true, 
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.3",
     "@testing-library/jest-dom": "^5.16.5",
