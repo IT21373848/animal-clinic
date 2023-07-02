@@ -1,6 +1,6 @@
 {
   "homepage": "https://it21373848.github.io/Animal-Clinic-Management-System",
-  "name": "animal-clinic-management-system",
+  "name": "myapp",
   "version": "0.1.0",
   "private": true, 
   "dependencies": {
@@ -41,6 +41,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
