@@ -66,6 +66,15 @@ function PaymentList(props) {
   }, []);
 
   const tabRow = () => {
+    if (payment.length === 0) {
+      return (
+        <tr>  
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      );
+    }
     return payment.map((object, i) => {
       return <PaymentTableRow obj={object} key={i} />;
     });

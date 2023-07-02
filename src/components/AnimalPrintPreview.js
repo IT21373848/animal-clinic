@@ -6,7 +6,7 @@ import ReactToPrint from 'react-to-print';
 import "../components/CSS/listmain.css";
 import {AnimalPrint} from "./AnimalPrint"
 import PrintHeader from "./PrintHeader";
-
+import DummyDataAnimal from "./DummyDataAnimal";
 
 function AnimalPrintPreview(props) {
     //read hook
@@ -24,11 +24,11 @@ function AnimalPrintPreview(props) {
       })
       .catch((error) => {
         console.log(error);
-      });
+      }); 
   }, []);
-
+ 
   const tabRow = () => {
-    return animal.map((object, i) => (
+    return DummyDataAnimal.map((object, i) => (
       <tr key={object._id}>
         <td style={{ display: "none" }}>{object._id}</td>
         <td>{object.animal_name}</td>

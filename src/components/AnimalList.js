@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { withRouter } from "./withRouter";
 import "../components/CSS/listmain.css";
+import DummyDataAnimal from "./DummyDataAnimal";
 
 function AnimalList(props) {
   //read hook
@@ -145,7 +146,11 @@ function AnimalList(props) {
             <td></td>
             <td></td>
           </tr>
-          <tbody>{tabRow()}</tbody>
+          <tbody>
+            {DummyDataAnimal.map((animal) => (
+              <AnimalTableRow key={animal._id} obj={animal} />
+            ))}
+          </tbody>
         </table>
       </div>
     </div>

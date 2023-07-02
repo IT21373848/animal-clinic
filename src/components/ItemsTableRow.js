@@ -300,14 +300,14 @@ const ItemTableRow = (props) => {
       }
 
       <td key={itemState._id} style={{ display: "none" }}>
-        {" "}
+        {" "} 
       </td>
       <img
-        src={`../uploads/${itemState.image}`}
+        src={process.env.PUBLIC_URL + `/uploads/${itemState.image}`}
         className="img"
-        style={{ width: "10em", height: "10em" }}
-        alt="img"
-      />
+        style={{ width: "10em", height: "10em", paddingBottom:"5px" }}
+        alt="img"  
+      /> 
 
       <td>{itemState.item_name}</td>
       <td>{itemState.item_category}</td>

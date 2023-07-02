@@ -47,6 +47,16 @@ function CategoryList(props) {
   }, []);
 
   const tabRow = () => {
+    if (item.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return item.map((object, i) => {
       return <CategoryTableRow obj={object} key={i} />;
     });

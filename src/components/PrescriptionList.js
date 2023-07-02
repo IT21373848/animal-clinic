@@ -89,6 +89,16 @@ function PrescriptionList(props) {
   }, []);
 
   const tabRow = () => {
+    if (prescription.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return prescription.map((object, i) => {
       return <PrescriptionTableRow obj={object} key={i} />;
     });

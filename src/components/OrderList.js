@@ -50,6 +50,16 @@ function OrderList(props) {
   }, []);
 
   const tabRow = () => {
+    if (adminOrder.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return adminOrder.map((object, i) => {
       return <OrderListTableRow obj={object} key={i} />;
     });

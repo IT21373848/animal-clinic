@@ -6,6 +6,7 @@ import ReactToPrint from 'react-to-print';
 import { UserPrint} from "./UserPrint";
 import PrintHeader from "./PrintHeader";
 import "../components/CSS/listmain.css";
+import DummyDataUser from "./DummyDataUser";
 
 function UsersListPrintPreview(props) {
 
@@ -30,13 +31,13 @@ function UsersListPrintPreview(props) {
 
 
   const tabRow = () => {
-    return user.map((object, i) => (
+    return DummyDataUser.map((object, i) => (
       <tr key={object._id}>
         <td style={{ display: "none" }}>{object._id}</td>
         <td>{object.first_name}</td>
         <td>{object.last_name}</td>
         <td>{object.email}</td>
-        <td>{object.date}</td>
+        <td>{object.date}</td> 
       </tr>
     ));
   };
@@ -83,7 +84,7 @@ content={() => componentRef.current} ></ReactToPrint>
           //-------------------------Display data from database-------------------
         }
        
-        <table className="table table-striped" style={{ width: "54em" }}>
+        <table className="table table-striped" >
           <tr>
             <td>
               <b>First Name</b>

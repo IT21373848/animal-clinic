@@ -10,12 +10,13 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { withRouter } from "./withRouter";
 
+import DummyDataItems from "./DummyDataItems";
 import "../components/CSS/listmain.css";
 import "../components/CSS/shippingForm.css";
-
+ 
 function StoreCard() {
-  //read hook
-  const [item, setItem] = useState([]);
+  //read hook 
+  const [item, setItem] = useState(DummyDataItems);
 
   const [cart, setCart] = useState([]);
 
@@ -159,10 +160,10 @@ function StoreCard() {
               <Card.Img
                 className="justify-content-center"
                 variant="top"
-                src={`../uploads/${item[j].image}`}
+                src={process.env.PUBLIC_URL + `/uploads/${item[j].image}`}
                 style={{ width: "8em", height: "8em", marginTop: "1em" }}
                 alt="img"
-              />
+              /> 
 
               <Card.Body>
                 <Card.Title>

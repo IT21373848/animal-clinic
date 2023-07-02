@@ -38,6 +38,16 @@ function AdmissionPrintPreview(props){
  
 
   const tabRow = () => {
+    if (admission.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return admission.map((object, i) => (
       <tr key={object._id}>
         <td style={{ display: "none" }}>{object._id}</td>

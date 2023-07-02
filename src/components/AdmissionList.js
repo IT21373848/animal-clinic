@@ -109,6 +109,16 @@ function AdmissionForm(props) {
   }, []);
 
   const tabRow = () => {
+    if (admission.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return admission.map((object, i) => {
       return <AdmissionTableRow obj={object} key={i} />;
     });

@@ -10,6 +10,8 @@ import Table from "react-bootstrap/Table";
 import "../components/CSS/listmain.css";
 import { Alert } from "react-bootstrap";
 
+import DummyDataEmploy from "./DummyDataEmployee";
+
 function EmployeeList(props) {
   //Form validation
   const [errors, setErrors, setVal] = useState({});
@@ -128,8 +130,18 @@ function EmployeeList(props) {
       });
   }, []);
 
-  const tabRow = () => {
-    return employee.map((object, i) => {
+  const tabRow = () => { 
+    if (DummyDataEmploy.length === 0) {
+      return (
+        <tr>
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      );
+    }
+
+    return DummyDataEmploy.map((object, i) => {
       return <EmployeeTableRow obj={object} key={i} />;
     });
   };

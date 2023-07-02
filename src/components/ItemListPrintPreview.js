@@ -6,7 +6,7 @@ import ReactToPrint from 'react-to-print';
 import { ItemPrint } from './ItemPrint';
 import PrintHeader from "./PrintHeader";
 import '../components/CSS/listmain.css';
-
+import DummyDataItems from "./DummyDataItems";
 
 
 
@@ -33,7 +33,7 @@ function ItemListPrintPreview(props){
   }, []);
 
   const tabRow = () => {
-    return item.map((object, i) => (
+    return DummyDataItems.map((object, i) => (
       <tr key={object._id}>
         <td style={{ display: "none" }}>{object._id}</td>
         <td>{object.name}</td>

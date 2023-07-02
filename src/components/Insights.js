@@ -23,7 +23,7 @@ function Table() {
 
   return (
     <div>
-      <h1>Box Table Example</h1>
+  
       <table style={{ borderCollapse: 'collapse' }}>
         <tbody>{renderTable()}</tbody>
       </table>

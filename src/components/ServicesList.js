@@ -75,7 +75,17 @@ function ServicesList(props) {
       });
   }, []);
 
-  const tabRow = () => {
+  const tabRow = () => { 
+    if (service.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return service.map((object, i) => {
       return <ServicesTableRow obj={object} key={i} />;
     });

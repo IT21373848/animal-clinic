@@ -77,6 +77,16 @@ function ShelterList(props) {
   }, []);
 
   const tabRow = () => {
+    if (shelter.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+             No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return shelter.map((object, i) => {
       return <ShelterTableRow obj={object} key={i} />;
     });

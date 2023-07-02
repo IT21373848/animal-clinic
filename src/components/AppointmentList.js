@@ -54,6 +54,16 @@ function ApplicationList(props) {
   }, []);
 
   const tabRow = () => {
+    if (application.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return application.map((object, i) => {
       return <AppointmentTableRow obj={object} key={i} />;
     });

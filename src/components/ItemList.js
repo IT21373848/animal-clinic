@@ -12,6 +12,8 @@ import { Alert } from "react-bootstrap";
 
 import "../components/CSS/listmain.css";
 
+import DummyDataItems from "./DummyDataItems";
+
 function ItemList(props) {
   const componentRef = useRef();
 
@@ -117,12 +119,12 @@ function ItemList(props) {
   }, []);
 
   const tabRow = () => {
-    return item.map((object, i) => {
+    return DummyDataItems.map((object, i) => {
       return <ItemsTableRow obj={object} key={i} />;
     });
   };
 
-  //taking count
+  //taking count 
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -403,11 +405,11 @@ function ItemList(props) {
       <div className="tablestyle">
         {
           //-------------------------Display data from database---------------------
-        }
+        } 
 
-          <table className="table table-striped" style={{ height: "55em" }}>
-            <tr  class="table-header" style={{ textAlign: "center" }}>
-              <td> 
+          <table className="table table-striped">
+            <tr  class="table-header" style={{ textAlign: "center", paddingBottom:"2px" }}>
+              <td>  
                 <b>Item</b> 
               </td>
               <td>

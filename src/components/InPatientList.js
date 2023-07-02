@@ -55,6 +55,16 @@ function InPatient(props) {
   }, []);
 
   const tabRow = () => {
+    if (inpatient.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return inpatient.map((object, i) => {
       return <InPatientTableRow obj={object} key={i} />;
     });

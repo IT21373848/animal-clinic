@@ -13,8 +13,8 @@ const AnimalTableRow = (props) => {
     animal_type: props.obj.animal_type,
     animal_breed: props.obj.animal_breed,
     animal_gender: props.obj.animal_gender,
-    DOB: props.obj.DOB.substring(0, 10),
-    date: props.obj.date.substring(0, 10),
+    DOB: props.obj.DOB ? props.obj.DOB.substring(0, 10) : "",
+    date: props.obj.date ? props.obj.date.substring(0, 10) : "",
     owner_ID: props.obj.owner_ID,
   });
 

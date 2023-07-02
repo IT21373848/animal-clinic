@@ -46,6 +46,16 @@ function AnimalTypeList(props) {
   }, []);
 
   const tabRow = () => {
+    if (animaltype.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      ); 
+    }
+
     return animaltype.map((object, i) => {
       return <AnimalTypeTableRow obj={object} key={i} />;
     });

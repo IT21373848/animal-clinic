@@ -6,7 +6,7 @@ import Table from 'react-bootstrap/Table';
 import { EmployeePrint } from './EmployeePrint';
 import ReactToPrint from 'react-to-print';
 import PrintHeader from "./PrintHeader";
-
+import DummyDataEmploy from './DummyDataEmployee';
 
 import '../components/CSS/listmain.css';
 
@@ -31,8 +31,8 @@ function EmployeeListPreview(props) {
       });
   }, []);
 
-  const tabRow = () => {
-    return employee.map((object, i) => (
+  const tabRow = () => { 
+    return DummyDataEmploy.map((object, i) => (
       <tr key={object._id}>
         <td style={{ display: "none" }}>{object._id}</td>
         <td>{object.name}</td>
@@ -43,9 +43,10 @@ function EmployeeListPreview(props) {
         <td>{object.gender}</td>
         <td>{object.birthday}</td>
         <td>{object.jobrole}</td>
-        <td>{object.date.substring(0, 10)}</td>
+        <td>{object.date && object.date.substring(0, 10)}</td>
+
        
-      </tr>
+      </tr> 
     ));
   };
 

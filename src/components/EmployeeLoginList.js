@@ -121,6 +121,16 @@ function EmployeeLoginList(props) {
   }, []);
 
   const tabRow = () => {
+    if (employeelogin.length === 0) {
+      return (
+        <tr>   
+          <td colSpan="10" align="center">
+            No data available
+          </td>
+        </tr>
+      );
+    }
+
     return employeelogin.map((object, i) => {
       return <EmployeeLoginTableRow obj={object} key={i} />;
     });
