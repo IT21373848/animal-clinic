@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 
+function getImageUrl(path) {
+  return process.env.PUBLIC_URL + path;
+}
+
 class Landing extends Component {
   constructor(props) {
     super(props);
@@ -58,25 +62,25 @@ class Landing extends Component {
 
           <Carousel.Item>
             <img
+            src={getImageUrl("/img/HomeSlide1.png")}
               className="d-block w-100"
-              src="/img/HomeSlide1.png"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/img/HomeSlide3.jpg"
+              src={getImageUrl("/img/HomeSlide3.png")}
               alt="Second slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/img/HomeSlide2.jpg"
+              src={getImageUrl("/img/HomeSlide2.png")}
               alt="Third slide"
             />
-          </Carousel.Item>
+          </Carousel.Item> 
         </Carousel>
    
         <Container style={{ marginTop:"20px" }}> 

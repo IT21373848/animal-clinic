@@ -236,7 +236,8 @@ function StoreCard() {
       <div className="cart">
         <span>
           <img
-            src="../img/cart.png"
+            src={process.env.PUBLIC_URL + "/img/cart.png"}
+           
             onClick={handleShow}
             style={{ width: "40px", height: "40px", float: "left" }}
           ></img>
