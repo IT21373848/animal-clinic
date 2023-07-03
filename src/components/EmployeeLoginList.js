@@ -11,6 +11,8 @@ import { Alert } from "react-bootstrap";
 
 import "../components/CSS/listmain.css";
 
+import DummyDataAccount from "./DummyDataAccount";
+
 function EmployeeLoginList(props) {
   const componentRef = useRef();
 
@@ -121,17 +123,17 @@ function EmployeeLoginList(props) {
   }, []);
 
   const tabRow = () => {
-    if (employeelogin.length === 0) {
+    if (DummyDataAccount.length === 0) {
       return (
         <tr>   
           <td colSpan="10" align="center">
             No data available
           </td>
-        </tr>
+        </tr> 
       );
     }
 
-    return employeelogin.map((object, i) => {
+    return DummyDataAccount.map((object, i) => {
       return <EmployeeLoginTableRow obj={object} key={i} />;
     });
   };

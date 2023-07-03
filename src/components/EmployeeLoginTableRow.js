@@ -13,7 +13,7 @@ const EmployeeLoginTableRow = (props) => {
     employeelogin_email: props.obj.email,
     employeelogin_password: props.obj.password,
     employeelogin_acctype: props.obj.acctype,
-    employeelogin_date: props.obj.reggdate,
+    employeelogin_date: props.obj.reggdate?.substring(0, 10) ?? "",
   });
 
   const [show, setShow] = useState(false);
@@ -128,10 +128,13 @@ const EmployeeLoginTableRow = (props) => {
         {" "}
       </td>
       <img
-        src={`../uploads/${employeeloginState.employeelogin_image}`}
+        src={
+          process.env.PUBLIC_URL +
+          `/uploads/${employeeloginState.employeelogin_image}`
+        }
         className="circular-image"
         alt="img"
-      />
+      /> 
 
       <td>{employeeloginState.employeelogin_email}</td>
 
@@ -139,7 +142,7 @@ const EmployeeLoginTableRow = (props) => {
         {employeeloginState.employeelogin_acctype}
       </td>
       <td style={{ textAlign: "center" }}>
-        {employeeloginState.employeelogin_date.substring(0, 10)}
+        {employeeloginState.employeelogin_date}
       </td>
 
       <td>
