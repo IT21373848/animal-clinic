@@ -72,7 +72,7 @@ class App extends Component {
               <Route path="/" element={<Landing />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/profile" element={<Profile />} />
+              <Route path="/animal-clinic/profile" element={<Profile />} />
               <Route path="/services" element={<ServiceList />} />
               <Route path="/regUser" element={<UserList />} />
               <Route path="/accounts" element={<EmployeeLoginList />} />

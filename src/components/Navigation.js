@@ -17,8 +17,8 @@ class Navbar extends Component {
       <div className="nav1">
         <ul className="nav-tabs1">
           <li className="nav-item1">
-            <Link to="/profile" className="nav-link">
-              <p>Profile</p>
+            <Link to="/animal-clinic/profile" className="nav-link">
+              <p>Profile</p> 
             </Link>
           </li>
 
@@ -35,7 +35,7 @@ class Navbar extends Component {
       <div className="nav1">
         <ul className="nav-tabs1">
           <li className="nav-item1">
-            <Link to="/profile" className="nav-link">
+            <Link to="/animal-clinic/profile" className="nav-link">
               <p>Profile</p>
             </Link>
           </li>
