@@ -20,7 +20,9 @@ function AnimalList(props) {
     animal_type: "",
     animal_breed: "",
     animal_gender: "",
+    owner_ID: "",
     DOB: "",
+    date: "",
   });
 
   const handleChange = (e) => {
