@@ -17,7 +17,7 @@ class Navbar extends Component {
       <div className="nav1">
         <ul className="nav-tabs1">
           <li className="nav-item1">
-            <Link to="/animal-clinic/profile" className="nav-link">
+            <Link to="/profile" className="nav-link">
               <p>Profile</p> 
             </Link>
           </li>
@@ -35,7 +35,7 @@ class Navbar extends Component {
       <div className="nav1">
         <ul className="nav-tabs1">
           <li className="nav-item1">
-            <Link to="/animal-clinic/profile" className="nav-link">
+            <Link to="/profile" className="nav-link">
               <p>Profile</p>
             </Link>
           </li>
@@ -65,11 +65,11 @@ class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbar1">
             <ul className="nav-tabs1"> 
-              <Link to="/" className="nav-link">
+              <Link to="/#" className="nav-link">
               <img src={process.env.PUBLIC_URL + "/img/appLogo.png"} className="app-logo" alt="home" /> 
                </Link> 
             </ul>
- 
+  
             {localStorage.usertoken ? userLink : loginRegLink}
           </div>
         </nav>

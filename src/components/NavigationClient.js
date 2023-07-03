@@ -94,7 +94,7 @@ class Navbar2 extends Component {
             <div className="collapse navbar-collapse justify-content-md-center" id="navbar1">
                 <ul className="nav-tabs2">
                     <li className="nav-item2">
-                        <Link to ="/" className="nav-link">
+                        <Link to ="/#" className="nav-link">
                             <h6>Home</h6>
                         </Link>
                     </li>
