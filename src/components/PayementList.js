@@ -10,12 +10,14 @@ import ReactToPrint from "react-to-print";
 import "../components/CSS/listmain.css";
 import jwt_decode from "jwt-decode";
 
+import DummyDataPaymet from "./DummyDataPayment";
+
 function PaymentList(props) {
   //taking user
   const token = localStorage.getItem("usertoken");
   const [userData, setUserData] = useState({});
 
-  useEffect(() => {
+  useEffect(() => { 
     try {
       const decoded = jwt_decode(token);
       setUserData({
@@ -66,7 +68,7 @@ function PaymentList(props) {
   }, []);
 
   const tabRow = () => {
-    if (payment.length === 0) {
+    if (DummyDataPaymet.length === 0) {
       return (
         <tr>  
           <td colSpan="10" align="center">
@@ -75,7 +77,7 @@ function PaymentList(props) {
         </tr>
       );
     }
-    return payment.map((object, i) => {
+    return DummyDataPaymet.map((object, i) => {
       return <PaymentTableRow obj={object} key={i} />;
     });
   };

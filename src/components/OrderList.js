@@ -8,6 +8,8 @@ import { withRouter } from "./withRouter";
 import "../components/CSS/listmain.css";
 import OrderListTableRow from "./OrderListTableRow";
 
+import DummyDataOrders from "./DummyDataOrders";
+
 function OrderList(props) {
   //read hook
   const [adminOrder, setAdminOrder] = useState([]);
@@ -50,7 +52,7 @@ function OrderList(props) {
   }, []);
 
   const tabRow = () => {
-    if (adminOrder.length === 0) {
+    if (DummyDataOrders.length === 0) {
       return (
         <tr>   
           <td colSpan="10" align="center">
@@ -60,9 +62,9 @@ function OrderList(props) {
       ); 
     }
 
-    return adminOrder.map((object, i) => {
+    return DummyDataOrders.map((object, i) => {
       return <OrderListTableRow obj={object} key={i} />;
-    });
+    }); 
   };
 
   //taking count
