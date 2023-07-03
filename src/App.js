@@ -68,11 +68,11 @@ class App extends Component {
           <Navbar />
           <Navbar2 />
           <div className="content-container">
-            <Routes basename="/animal-clinic"> 
+            <Routes > 
               <Route path="/" element={<Landing />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/animal-clinic/profile" element={<Profile />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="/services" element={<ServiceList />} />
               <Route path="/regUser" element={<UserList />} />
               <Route path="/accounts" element={<EmployeeLoginList />} />

@@ -1,0 +1,7 @@
+# .htaccess
+RewriteEngine On
+RewriteBase /animal-clinic/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /animal-clinic/index.html [L]
