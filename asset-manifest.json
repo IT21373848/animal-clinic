@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/animal-clinic/static/css/main.c889755a.css",
-    "main.js": "/animal-clinic/static/js/main.d922d792.js",
+    "main.js": "/animal-clinic/static/js/main.380d378a.js",
     "static/js/787.d3befce1.chunk.js": "/animal-clinic/static/js/787.d3befce1.chunk.js",
     "index.html": "/animal-clinic/index.html",
     "main.c889755a.css.map": "/animal-clinic/static/css/main.c889755a.css.map",
-    "main.d922d792.js.map": "/animal-clinic/static/js/main.d922d792.js.map",
+    "main.380d378a.js.map": "/animal-clinic/static/js/main.380d378a.js.map",
     "787.d3befce1.chunk.js.map": "/animal-clinic/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c889755a.css",
-    "static/js/main.d922d792.js"
+    "static/js/main.380d378a.js"
   ]
 }
