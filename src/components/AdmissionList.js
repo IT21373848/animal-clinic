@@ -10,6 +10,7 @@ import e from "cors";
 import "../components/CSS/listmain.css";
 import { Alert } from "react-bootstrap";
 
+import DummyDataAdmission from "./DummyDataAdmission";
 function AdmissionForm(props) {
   //read hook
   const [admission, setAdmission] = useState([]);
@@ -109,7 +110,7 @@ function AdmissionForm(props) {
   }, []);
 
   const tabRow = () => {
-    if (admission.length === 0) {
+    if (DummyDataAdmission.length === 0) {
       return (
         <tr>   
           <td colSpan="10" align="center">
@@ -119,7 +120,7 @@ function AdmissionForm(props) {
       ); 
     }
 
-    return admission.map((object, i) => {
+    return DummyDataAdmission.map((object, i) => {
       return <AdmissionTableRow obj={object} key={i} />;
     });
   };
