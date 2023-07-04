@@ -1,14 +1,15 @@
 .app-logo {
     height: 4em;
     width: 9em;
+    filter: drop-shadow(0 0 15px #461c72);
 } 
 
 h6 {
     font-weight: 600;
-    color:white;
-}
+    color:white; 
+} 
 
-p {
+p { 
     font-weight: 500;
     color: black;
 }
