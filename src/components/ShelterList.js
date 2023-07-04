@@ -207,7 +207,7 @@ function ShelterList(props) {
       {
         //-------------------------Side Menue Buttons-------------------
       }
-
+<h1 align="center">Shelters</h1>  
       <div className="tablestyle">
 
         {
