@@ -387,7 +387,8 @@ function EmployeeList(props) {
 
       <h1 align="center">Employee List</h1>
       <h4 className="text-right">
-        <b>Total: {count}</b>
+      {/*   <b>Total: {count}</b> */}
+      <b>Total: 12 </b>
       </h4>
 
       {

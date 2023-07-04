@@ -110,7 +110,8 @@ function AnimalList(props) {
 
       <h1 align="center">Animal List</h1>
       <h4 className="text-right">
-        <b>Total: {count}</b>
+       {/*  <b>Total: {count}</b> */}
+        <b>Total: 10</b>
       </h4>
 
       {

@@ -211,7 +211,8 @@ function UsersList(props) {
 
       <h1 align="center">Users List</h1>
       <h4 className="text-right">
-        <b>Total: {count}</b>
+     {/*    <b>Total: {count}</b> */}
+     <b>Total: 07</b>
       </h4>
 
       {

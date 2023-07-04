@@ -9,7 +9,6 @@ import DummyDataPayment from "./DummyDataPayment";
 
 const colors = ["#1B1116", "#773B5A", "#92592D", "#D0A06A", "#CCCCCC"];
 
-
 const InsightsService = () => {
   const [paymentData, setPaymentData] = useState([]);
   useEffect(() => {
@@ -50,7 +49,14 @@ const InsightsService = () => {
 
   return (
     <>
-      <div className="insights-container">
+      <div
+        className="insights-container"
+        style={{
+          backgroundColor: "#f2f2f2",
+          padding: "20px",
+          borderRadius: "20px",
+        }}
+      >
         <div>
           <h1>OverView</h1>
           <Row>
@@ -79,18 +85,20 @@ const InsightsService = () => {
           </Row>
 
           <Row>
-            <Col className="insights-col chart"> 
-            <h2>Monthly Payments</h2>
-              <ResponsiveContainer width="100%" height={300}> 
-              
-                <PieChart style={{ backgroundColor: "#F0F0F0" , marginBottom: "120px"}}>
-                  <Pie    
-                    data={data} 
-                    dataKey="total" 
+            <Col></Col>
+            <Col className="insights-col chart">
+              <h2>Monthly Income</h2>
+              <ResponsiveContainer width="100%" height={300}>
+                <PieChart
+                  style={{ backgroundColor: "#F0F0F0", marginBottom: "120px" }}
+                >
+                  <Pie
+                    data={data}
+                    dataKey="total"
                     cx="50%"
                     cy="50%"
                     outerRadius={60}
-                    fill="#8884d8"  
+                    fill="#8884d8"
                     label
                   >
                     {data.map((entry, index) => (
@@ -98,18 +106,15 @@ const InsightsService = () => {
                         key={`cell-${index}`}
                         fill={colors[index % colors.length]}
                       />
-                    ))} 
+                    ))}
                   </Pie>
                   <Legend verticalAlign="bottom" height={36} />
-                  
-                </PieChart> 
-              </ResponsiveContainer> 
+                </PieChart>
+              </ResponsiveContainer>
             </Col>
-            <Col>
-            </Col>
-            <Col>
-            </Col>
-          </Row> 
+
+            <Col></Col>
+          </Row>
           <Row>
             <Col className="insights-col chart-next ">
               <h5>All Items</h5>
@@ -154,16 +159,6 @@ const InsightsService = () => {
 };
 
 export default InsightsService;
-
-
-
-
-
-
-
-
-
-
 
 /* const [service, setService] = useState([]);
 
