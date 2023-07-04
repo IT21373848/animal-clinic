@@ -75,7 +75,7 @@ class Profile extends Component {
                         <b>
                           <td>
                           {/*   {email} */}
-                          admin@gmai.com
+                          admin@gmail.com
                             </td>
                         </b>
                       </tr>
