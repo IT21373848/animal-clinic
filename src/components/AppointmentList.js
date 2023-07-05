@@ -219,7 +219,7 @@ function ApplicationList(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Application List</h1>
+      <h1 align="center">Appointments</h1>
       <h4 className="text-right">
         <b>Total: {count}</b>
       </h4>

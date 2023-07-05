@@ -351,8 +351,8 @@ function AdmissionForm(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Admission List</h1>
-      <h4 className="text-right">
+      <h1 align="center">Admissions</h1>
+      <h4 className="text-right"> 
         <b>Total: {count}</b>
       </h4>
 

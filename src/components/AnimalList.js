@@ -108,7 +108,7 @@ function AnimalList(props) {
         //-------------------------Insert form using bootstrap Modal-------------------
       }
 
-      <h1 align="center">Animal List</h1>
+      <h1 align="center">Animals</h1>
       <h4 className="text-right">
        {/*  <b>Total: {count}</b> */}
         <b>Total: 10</b>

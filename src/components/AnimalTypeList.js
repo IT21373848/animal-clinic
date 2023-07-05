@@ -128,7 +128,7 @@ function AnimalTypeList(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Animal Type</h1>
+      <h1 align="center">Animal Types</h1>
       <h4 className="text-right">
         <b>Total: {count}</b>
       </h4>
