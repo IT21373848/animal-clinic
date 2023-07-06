@@ -222,7 +222,7 @@ function InPatient(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">inpatient List</h1>
+      <h1 align="center">Inpatients</h1>
       <h4 className="text-right">
         <b>Total: {count}</b>
       </h4>
