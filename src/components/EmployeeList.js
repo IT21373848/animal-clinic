@@ -385,7 +385,7 @@ function EmployeeList(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Employee List</h1>
+      <h1 align="center">Employees</h1>
       <h4 className="text-right">
       {/*   <b>Total: {count}</b> */}
       <b>Total: 12 </b>
