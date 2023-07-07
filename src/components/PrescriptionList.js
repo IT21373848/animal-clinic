@@ -248,7 +248,7 @@ function PrescriptionList(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Prescription List </h1>
+      <h1 align="center">Prescriptions </h1>
       <h4 className="text-right">
         <b>Total: {count}</b>
       </h4>
