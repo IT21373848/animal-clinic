@@ -180,7 +180,7 @@ function PaymentList(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Payment List</h1>
+      <h1 align="center">Payments</h1>
       <h4 className="text-right">
         <b>Total: {count}</b>
       </h4>
