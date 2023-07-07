@@ -393,7 +393,7 @@ function ItemList(props) {
         </Modal.Footer>
       </Modal>
 
-      <h1 align="center">Item List</h1>
+      <h1 align="center">Store Items</h1>
       <h4 className="text-right">
         <b>Total: {count}</b>
       </h4>
